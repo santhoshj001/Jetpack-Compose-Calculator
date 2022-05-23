@@ -47,32 +47,23 @@ fun Calculator(
                     symbol = "AC",
                     modifier = Modifier
                         .aspectRatio(2f)
-                        .weight(2f),
-                    backgroundColor = MaterialTheme.colorScheme.tertiary,
-                    textColor = MaterialTheme.colorScheme.onTertiary,
-                    onClick = {
-                        onAction(CalculatorAction.Clear)
-                    }
-                )
+                        .weight(2f)
+                ) {
+                    onAction(CalculatorAction.Clear)
+                }
 
                 CalculatorButton(
-                    symbol = "DEL",
+                    symbol = "Del",
                     modifier = Modifier
-                        .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Delete) }
-                )
+                        .aspectRatio(2f)
+                        .weight(2f)
+                ) { onAction(CalculatorAction.Delete) }
                 CalculatorButton(
                     symbol = "/",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.secondary,
-                    textColor = MaterialTheme.colorScheme.onSecondary,
-                    onClick = { onAction(CalculatorAction.Operation(CalculatorOperation.Divide)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Operation(CalculatorOperation.Divide)) }
             }
 
             Row(
@@ -84,38 +75,26 @@ fun Calculator(
                     symbol = "7",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(7)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Number(7)) }
                 CalculatorButton(
                     symbol = "8",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(8)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Number(8)) }
                 CalculatorButton(
                     symbol = "9",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(9)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Number(9)) }
                 CalculatorButton(
                     symbol = "*",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.secondary,
-                    textColor = MaterialTheme.colorScheme.onSecondary,
-                    onClick = { onAction(CalculatorAction.Operation(CalculatorOperation.Multiply)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Operation(CalculatorOperation.Multiply)) }
             }
 
 
@@ -128,38 +107,26 @@ fun Calculator(
                     symbol = "4",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(4)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Number(4)) }
                 CalculatorButton(
                     symbol = "5",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(5)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Number(5)) }
                 CalculatorButton(
                     symbol = "6",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(6)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Number(6)) }
                 CalculatorButton(
                     symbol = "-",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.secondary,
-                    textColor = MaterialTheme.colorScheme.onSecondary,
-                    onClick = { onAction(CalculatorAction.Operation(CalculatorOperation.Subtract)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Operation(CalculatorOperation.Subtract)) }
             }
 
 
@@ -172,38 +139,26 @@ fun Calculator(
                     symbol = "1",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(1)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Number(1)) }
                 CalculatorButton(
                     symbol = "2",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(2)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Number(2)) }
                 CalculatorButton(
                     symbol = "3",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(3)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Number(3)) }
                 CalculatorButton(
                     symbol = "+",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.secondary,
-                    textColor = MaterialTheme.colorScheme.onSecondary,
-                    onClick = { onAction(CalculatorAction.Operation(CalculatorOperation.Add)) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Operation(CalculatorOperation.Add)) }
             }
 
 
@@ -215,30 +170,21 @@ fun Calculator(
                     symbol = "0",
                     modifier = Modifier
                         .aspectRatio(2f)
-                        .weight(2f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Number(0)) }
-                )
+                        .weight(2f)
+                ) { onAction(CalculatorAction.Number(0)) }
 
                 CalculatorButton(
                     symbol = ".",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.primary,
-                    textColor = MaterialTheme.colorScheme.onPrimary,
-                    onClick = { onAction(CalculatorAction.Decimal) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Decimal) }
                 CalculatorButton(
                     symbol = "=",
                     modifier = Modifier
                         .aspectRatio(1f)
-                        .weight(1f),
-                    backgroundColor = MaterialTheme.colorScheme.secondary,
-                    textColor = MaterialTheme.colorScheme.onSecondary,
-                    onClick = { onAction(CalculatorAction.Calculate) }
-                )
+                        .weight(1f)
+                ) { onAction(CalculatorAction.Calculate) }
             }
         }
     }
